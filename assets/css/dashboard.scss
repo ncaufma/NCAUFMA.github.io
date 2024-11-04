@@ -1,0 +1,92 @@
+---
+---
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  flex: 1;
+  margin: 0 10px;
+}
+
+.card .icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.card .info h3 {
+  font-size: 18px;
+  color: #666;
+}
+
+.meu-carrossel {
+  max-width: 100vh; /* Define a largura máxima do carrossel */
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0 30px 0 20px;
+}
+
+.meu-carrossel .swiper-wrapper {
+  display: flex;
+  padding: 0 0 20px 0;
+}
+
+
+.meu-carrossel .swiper-slide {
+  width: auto; 
+  max-width: calc((100% - 60px) / 3); /* Limite de largura */
+  flex-shrink: 0;
+  background-color: #c7d2fe;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.meu-carrossel .swiper-slide >*{
+  margin: 0;
+}
+
+.meu-carrossel .meu-carrossel-button-next,
+.meu-carrossel .meu-carrossel-button-prev {
+  position: absolute;
+  top: 65% !important;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #e0e7ff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #4a4a4a;
+  transition: background-color 0.3s;
+}
+
+
+.meu-carrossel-button-next {
+  right: 10px;
+}
+
+.meu-carrossel-button-prev {
+  left: 0px;
+}
+.meu-carrossel-button-next::after {
+  font-size: 25px;
+  margin-right: -5px;
+  font-weight: 900;
+}
+
+.meu-carrossel-button-prev::after {
+  font-size: 25px;
+  margin-left: -5px;
+  font-weight: 900;
+}

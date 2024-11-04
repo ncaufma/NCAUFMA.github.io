@@ -1,0 +1,73 @@
+{% assign members = include %}
+
+<div class="cardmembro">
+  <!-- Lado frontal do card -->
+  <div class="cardmembro-front">
+    <div class="cardmembroimage">
+      {% if members.image %}
+        <img src="{{ members.image | relative_url }}" alt="Profile Picture" class="avatar">
+      {% else %}
+        <img src="../assets/images/icones/icone_membro.svg" alt="Default Profile Picture" class="avatar">
+      {% endif %}
+    </div>
+    <div class="cardmembro-text">
+      <div>
+        <a class="cardmembro-title">{{members.name}}</a>
+      </div>
+      <div class="linksmembros">
+        {% if members.linklattes %}
+          <a href="{{ members.linklattes }}" class="icony"><img src="../assets/images/icones/lattes-002.svg" title="Lattes" alt="Lattes" class="icone"></a>
+        {% endif %}
+        {% if members.linkorcid %}
+          <a href="{{ members.linkorcid }}" class="icony"><img src="../assets/images/icones/orcid.svg" title="Orcid" alt="Orcid" class="icone"></a>
+        {% endif %}
+        {% if members.linklinkedin %}
+          <a href="{{ members.linklinkedin }}" class="icony"><img src="../assets/images/icones/linkedin.svg" title="Linkedin" alt="Linkedin" class="icone"></a>
+        {% endif %}
+        {% if members.linkemail %}
+          <a href="mailto:{{ members.linkemail }}" class="icony"><img src="../assets/images/icones/email.svg" title="{{ members.linkemail }}" alt="Email" class="icone"></a>
+        {% endif %}
+        {% if members.linkgithub %}
+          <a href="{{ members.linkgithub }}" class="icony"><img src="../assets/images/icones/git.svg" title="Git" alt="Git" class="icone"></a>
+        {% endif %}
+        {% if members.instagram %}
+          <a href="{{ members.linkinstagram }}" class="icony"><img src="../assets/images/icones/instagram.svg" title="Instagram" alt="instagram" class="icone"></a>
+        {% endif %}
+        {% if members.twitter %}
+          <a href="{{ members.linktwitter }}" class="icony"><img src="../assets/images/icones/twitter.svg" title="Twitter" alt="twitter" class="icone"></a>
+        {% endif %}
+      </div>
+    </div>
+    {% if members.description and members.description != "" %}
+    <button class="btn-saiba-mais" onclick="flipCard(this)">Ver Mais</button>
+    {% endif %}
+  </div>
+
+  <!-- Lado traseiro do card (com a descrição) -->
+  <div class="cardmembro-back">
+    <h3>{{ members.name }}</h3>
+    <p>{{ members.description }}</p>
+    <button class="btn-saiba-menos" onclick="flipCard(this)">Ver Menos</button>
+  </div>
+</div>
+
+<!-- JavaScript para trocar o estado do card -->
+<script>
+function flipCard(button) {
+  const card = button.closest('.cardmembro');
+  card.classList.toggle('flipped');
+}
+
+function ajustarAlturaBack() {
+    const cards = document.querySelectorAll('.cardmembro');
+    cards.forEach(card => {
+      const front = card.querySelector('.cardmembro-front');
+      const back = card.querySelector('.cardmembro-back');
+      back.style.height = `${front.offsetHeight}px`;
+    });
+  }
+
+  // Ajustar altura ao carregar a página e ao redimensionar
+  window.addEventListener('load', ajustarAlturaBack);
+  window.addEventListener('resize', ajustarAlturaBack);
+</script>

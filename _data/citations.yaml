@@ -1,0 +1,1028 @@
+# DO NOT EDIT, GENERATED AUTOMATICALLY
+
+- id: doi:10.1016/j.heliyon.2024.e27516
+  title: 'XRaySwinGen: Automatic medical reporting for X-ray exams with multimodal
+    model'
+  authors:
+  - "Gilvan Veras Magalh\xE3es"
+  - Roney L. de S. Santos
+  - Luis H. S. Vogado
+  - Anselmo Cardoso de Paiva
+  - "Pedro de Alc\xE2ntara dos Santos Neto"
+  publisher: Heliyon
+  date: '2024-04-01'
+  link: https://doi.org/g8nz9x
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.bspc.2024.106360
+  title: Deep learning for detecting dilated or contracted pupils
+  authors:
+  - Fredson C. Rodrigues
+  - Darlan B.P. Quintanilha
+  - Anselmo C. de Paiva
+  - "Arist\xF3fanes C. Silva"
+  - "Jo\xE3o D.S. de Almeida"
+  - Geraldo Braz
+  publisher: Biomedical Signal Processing and Control
+  date: '2024-08-01'
+  link: https://doi.org/g8nz9z
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.eswa.2023.121115
+  title: Improving hate speech detection using Cross-Lingual Learning
+  authors:
+  - Anderson Almeida Firmino
+  - "Cl\xE1udio de Souza Baptista"
+  - Anselmo Cardoso de Paiva
+  publisher: Expert Systems with Applications
+  date: '2024-01-01'
+  link: https://doi.org/g8nz92
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.3390/app14104332
+  title: "A One-Step Methodology for Identifying Concrete Pathologies Using Neural\
+    \ Networks\u2014Using YOLO v8 and Dataset Review"
+  authors:
+  - "Joel de Concei\xE7\xE3o Nogueira Diniz"
+  - Anselmo Cardoso de Paiva
+  - Geraldo Braz Junior
+  - "Jo\xE3o Dallyson Sousa de Almeida"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - "Ant\xF3nio Manuel Trigueiros da Silva Cunha"
+  - Sandra Cristina Alves Pereira da Silva Cunha
+  publisher: Applied Sciences
+  date: '2024-05-20'
+  link: https://doi.org/g8nz93
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.5753/jis.2024.3856
+  title: Proposing Usability-UX technologies for the design and evaluation of text-based
+    chatbots
+  authors:
+  - Malu Gabriele Silva Mafra
+  - Kennedy Nunes
+  - Simara Rocha
+  - Geraldo Braz Junior
+  - Aristofanes Silva
+  - Davi Viana
+  - Williamson Silva
+  - Luis Rivero
+  publisher: Journal on Interactive Systems
+  date: '2024-03-18'
+  link: https://doi.org/g8nz94
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.eswa.2022.119337
+  title: Detection of potential gas accumulations in 2D seismic images using spatio-temporal,
+    PSO, and convolutional LSTM approaches
+  authors:
+  - "Domingos Alves Dias J\xFAnior"
+  - Luana Batista da Cruz
+  - "Jo\xE3o Ot\xE1vio Bandeira Diniz"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso de Paiva
+  - Marcelo Gattass
+  - Carlos Rodriguez
+  - Roberto Quispe
+  - Roberto Ribeiro
+  - Vinicius Riguete
+  publisher: Expert Systems with Applications
+  date: '2023-04-01'
+  link: https://doi.org/g8nz95
+  plugin: sources.py
+  file: sources.yaml
+- id: https://doi.org/10.1166/jctn.2018.7321
+  title: Mixture of Dynamic Textures Applied to Temporal Analysis of Lung Lesions
+  authors:
+  - Darlan Bruno Pontes Quintanilha
+  - "Arist\xF3 fanes Corr\xEAa Silva"
+  - Anselmo Cardoso Paiva
+  - Marcelo Gattass
+  publisher: Journal of Computational and Theoretical Nanoscience
+  date: '2018-06-01'
+  link: https://doi.org/10.1166/jctn.2018.7321
+  plugin: sources.py
+  file: sources.yaml
+- id: https://doi.org/10.1007/s11042-021-11153-y
+  title: Segmentation and quantification of COVID-19 infections in CT using pulmonary
+    vessels extraction and deep learning
+  authors:
+  - "Jo\xE3o O. B. Diniz"
+  - Darlan B. P. Quintanilha
+  - Antonino C. Santos Neto
+  - Giovanni L. F. Silva
+  - Jonnison L. Ferreira
+  - Stelmo M. B. Netto
+  - "Jos\xE9 D. L. Ara\xFAjo"
+  - Luana B. Da Cruz
+  - Thamila F. B. Silva
+  - Caio M. S. Martins
+  - Marcos M. Ferreira
+  - Venicius G. Rego
+  - "Jos\xE9 M. C. Boaro"
+  - Carolina L. S. Cipriano
+  - "Arist\xF3fanes C. Silva"
+  - Anselmo C. Paiva
+  - Geraldo Braz Junior
+  - "Jo\xE3o D. S. Almeida"
+  - Rodolfo A. Nunes
+  - Roberto Mogami
+  - M. Gattass
+  publisher: Multimedia Tools and Applications
+  date: '2021-08-01'
+  link: https://doi.org/10.1007/s11042-021-11153-y
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1049/ic.2017.0036
+  title: Automatic consumption reading on electromechanical meters using HoG and SVM
+  authors:
+  - D.B.P. Quintanilha
+  - R.W.S. Costa
+  - J.O.B. Diniz
+  - J.D.S. de Almeida
+  - G. Braz
+  - A.C. Silva
+  - A.C. de Paiva
+  - E.M. Monteiro
+  - B.R. Froz
+  - L.P.A. Piheiro
+  - W. Melho
+  publisher: 7th Latin American Conference on Networked and Electronic Media (LACNEM
+    2017)
+  date: '2017-01-01'
+  link: https://doi.org/g8n2bx
+  plugin: sources.py
+  file: sources.yaml
+- id: https://doi.org/10.1080/21681163.2022.2043779
+  title: Heart segmentation in planning CT using 2.5D U-Net++ with attention gate
+  authors:
+  - J. O. B. Diniz
+  - "D. A. Dias J\xFAnior"
+  - L. B. Da Cruz
+  - G. L. F. Da Silva
+  - J. L. Ferreira
+  - D. B. Q. Pontes
+  - A. C. Silva
+  - A. C. De Paiva
+  - M. Gattas
+  publisher: 'Computer Methods in Biomechanics and Biomedical Engineering: Imaging
+    & Visualization'
+  date: '2023-05-04'
+  link: https://www.tandfonline.com/doi/full/10.1080/21681163.2022.2043779
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/SMC.2019.8914366
+  title: Prediction of unregistered power consumption lawsuits and its correlated
+    factors based on customer data using extreme gradient boosting model
+  authors:
+  - Francisco Y. Oliveira
+  - Pedro T. Cutrim
+  - Joao O. B. Diniz
+  - Giovanni L. F. Silva
+  - Darlan B. P. Quintanilha
+  - Otilio Silva Neto
+  - Vandecia R. M. Fernandes
+  - Geraldo Braz Junior
+  - Andre B. Cavalcante
+  - Aristofanes C. Silva
+  - Erika W. B. A. L. Alves
+  - Milton S. L. de Oliveira
+  - Lucas P. A. Pinheiro
+  publisher: 2019 IEEE International Conference on Systems, Man and Cybernetics (SMC)
+  date: '2019-10-01'
+  link: https://doi.org/g8n2b3
+  plugin: sources.py
+  file: sources.yaml
+- id: https://doi.org/10.1166/jmihi.2014.1226
+  title: A New Database for Breast Research with Infrared Image
+  authors:
+  - L. F. Silva
+  - D. C. M. Saade
+  - G. O. Sequeiros
+  - A. C. Silva
+  - A. C. Paiva
+  - R. S. Bravo
+  - A. Conci
+  publisher: Journal of Medical Imaging and Health Informatics
+  date: '2014-03-01'
+  link: https://doi.org/10.1166/jmihi.2014.1226
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.cmpb.2019.06.005
+  title: An automatic method for lung segmentation and reconstruction in chest X-ray
+    using deep neural networks
+  authors:
+  - Johnatan Carvalho Souza
+  - "Jo\xE3o Ot\xE1vio Bandeira Diniz"
+  - Jonnison Lima Ferreira
+  - "Giovanni Lucca Fran\xE7a Da Silva"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  publisher: Computer Methods and Programs in Biomedicine
+  date: '2019-08-01'
+  link: https://doi.org/org/10.1016/j.cmpb.2019.06.005
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.cmpb.2018.05.006
+  title: Convolutional neural network-based PSO for lung nodule false positive reduction
+    on CT images
+  authors:
+  - "Giovanni Lucca Fran\xE7a Da Silva"
+  - Thales Levi Azevedo Valente
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - Marcelo Gattass
+  publisher: Computer Methods and Programs in Biomedicine
+  date: '2018-08-01'
+  link: https://doi.org/org/10.1016/j.cmpb.2018.05.006
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.compbiomed.2011.05.017
+  title: Detection of masses in mammogram images using CNN, geostatistic functions
+    and SVM
+  authors:
+  - Wener Borges Sampaio
+  - Edgar Moraes Diniz
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - Marcelo Gattass
+  publisher: Computers in Biology and Medicine
+  date: '2011-08-01'
+  link: https://doi.org/org/10.1016/j.compbiomed.2011.05.017
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.artmed.2013.11.002
+  title: Automatic detection of solitary lung nodules using quality threshold clustering,
+    genetic algorithm and diversity index
+  authors:
+  - Antonio Oseas De Carvalho Filho
+  - Wener Borges De Sampaio
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - "Rodolfo Acatauass\xFA Nunes"
+  - Marcelo Gattass
+  publisher: Artificial Intelligence in Medicine
+  date: '2014-03-01'
+  link: https://doi.org/org/10.1016/j.artmed.2013.11.002
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.engappai.2014.07.007
+  title: Automatic detection of small lung nodules in 3D CT data using Gaussian mixture
+    models, Tsallis entropy and SVM
+  authors:
+  - Alex Martins Santos
+  - Antonio Oseas De Carvalho Filho
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - "Rodolfo Acatauass\xFA Nunes"
+  - Marcelo Gattass
+  publisher: Engineering Applications of Artificial Intelligence
+  date: '2014-11-01'
+  link: https://doi.org/org/10.1016/j.engappai.2014.07.007
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/s11042-017-4480-9
+  title: Lung nodules diagnosis based on evolutionary convolutional neural network
+  authors:
+  - Giovanni L. F. Da Silva
+  - "Ot\xEDlio P. Da Silva Neto"
+  - "Arist\xF3fanes C. Silva"
+  - Anselmo C. De Paiva
+  - Marcelo Gattass
+  publisher: Multimedia Tools and Applications
+  date: '2017-09-01'
+  link: https://doi.org/org/10.1007/s11042-017-4480-9
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.compbiomed.2014.11.016
+  title: Classification of breast regions as mass and non-mass based on digital mammograms
+    using taxonomic indexes and SVM
+  authors:
+  - "Fernando Soares S\xE9rvulo De Oliveira"
+  - Antonio Oseas De Carvalho Filho
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - Marcelo Gattass
+  publisher: Computers in Biology and Medicine
+  date: '2015-02-01'
+  link: https://doi.org/org/10.1016/j.compbiomed.2014.11.016
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.compbiomed.2009.08.009
+  title: Classification of breast tissues using Moran's index and Geary's coefficient
+    as texture signatures and SVM
+  authors:
+  - Geraldo Braz Junior
+  - Anselmo Cardoso De Paiva
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Alexandre Cesar Muniz De Oliveira
+  publisher: Computers in Biology and Medicine
+  date: '2009-12-01'
+  link: https://doi.org/org/10.1016/j.compbiomed.2009.08.009
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.compbiomed.2020.103906
+  title: Kidney segmentation from computed tomography images using deep neural network
+  authors:
+  - Luana Batista Da Cruz
+  - "Jos\xE9 Denes Lima Ara\xFAjo"
+  - Jonnison Lima Ferreira
+  - "Jo\xE3o Ot\xE1vio Bandeira Diniz"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - Anselmo Cardoso De Paiva
+  - Marcelo Gattass
+  publisher: Computers in Biology and Medicine
+  date: '2020-08-01'
+  link: https://doi.org/org/10.1016/j.compbiomed.2020.103906
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.artmed.2020.101845
+  title: Breast cancer diagnosis from histopathological images using textural features
+    and CBIR
+  authors:
+  - Edson D. Carvalho
+  - "Ant\xF4nio O.C. Filho"
+  - Romuere R.V. Silva
+  - "Fl\xE1vio H.D. Ara\xFAjo"
+  - "Jo\xE3o O.B. Diniz"
+  - "Arist\xF3fanes C. Silva"
+  - Anselmo C. Paiva
+  - Marcelo Gattass
+  publisher: Artificial Intelligence in Medicine
+  date: '2020-05-01'
+  link: https://doi.org/org/10.1016/j.artmed.2020.101845
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.cmpb.2018.01.007
+  title: Detection of mass regions in mammograms by bilateral analysis adapted to
+    breast density using similarity indexes and convolutional neural networks
+  authors:
+  - "Jo\xE3o Ot\xE1vio Bandeira Diniz"
+  - Pedro Henrique Bandeira Diniz
+  - Thales Levi Azevedo Valente
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - Marcelo Gattass
+  publisher: Computer Methods and Programs in Biomedicine
+  date: '2018-03-01'
+  link: https://doi.org/org/10.1016/j.cmpb.2018.01.007
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1145/2664551.2664561
+  title: 'A Comparison of SVM Versus Naive-Bayes Techniques for Sentiment Analysis
+    in Tweets: A Case Study with the 2013 FIFA Confederations Cup'
+  authors:
+  - "Andr\xE9 Luiz Firmino Alves"
+  - "Cl\xE1udio De Souza Baptista"
+  - Anderson Almeida Firmino
+  - "Maxwell Guimar\xE3es De Oliveira"
+  - Anselmo Cardoso De Paiva
+  publisher: Proceedings of the 20th Brazilian Symposium on Multimedia and the Web
+  date: '2014-11-18'
+  link: https://doi.org/org/10.1145/2664551.2664561
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.patcog.2018.03.032
+  title: Classification of patterns of benignity and malignancy based on CT using
+    topology-based phylogenetic diversity index and convolutional neural network
+  authors:
+  - Antonio Oseas De Carvalho Filho
+  - "Aristofanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - "Rodolfo Acatauass\xFA Nunes"
+  - Marcelo Gattass
+  publisher: Pattern Recognition
+  date: '2018-09-01'
+  link: https://doi.org/org/10.1016/j.patcog.2018.03.032
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.eswa.2016.10.039
+  title: Lung nodule classification using artificial crawlers, directional texture
+    and support vector machine
+  authors:
+  - Bruno Rodrigues Froz
+  - Antonio Oseas De Carvalho Filho
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - "Rodolfo Acatauass\xFA Nunes"
+  - Marcelo Gattass
+  publisher: Expert Systems with Applications
+  date: '2017-03-01'
+  link: https://doi.org/org/10.1016/j.eswa.2016.10.039
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/s11265-008-0209-3
+  title: "Detection of Breast Masses in Mammogram Images Using Growing Neural Gas\
+    \ Algorithm and Ripley\u2019s K Function"
+  authors:
+  - Leonardo De Oliveira Martins
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - Marcelo Gattass
+  publisher: Journal of Signal Processing Systems
+  date: '2009-04-01'
+  link: https://doi.org/org/10.1007/s11265-008-0209-3
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.eswa.2021.116270
+  title: Kidney tumor segmentation from computed tomography images using DeepLabv3+
+    2.5D model
+  authors:
+  - Luana Batista Da Cruz
+  - "Domingos Alves Dias J\xFAnior"
+  - "Jo\xE3o Ot\xE1vio Bandeira Diniz"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - Anselmo Cardoso De Paiva
+  - Marcelo Gattass
+  publisher: Expert Systems with Applications
+  date: '2022-04-01'
+  link: https://doi.org/org/10.1016/j.eswa.2021.116270
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.eswa.2021.115452
+  title: Automatic method for classifying COVID-19 patients based on chest X-ray images,
+    using deep features and PSO-optimized XGBoost
+  authors:
+  - "Domingos Alves Dias J\xFAnior"
+  - Luana Batista Da Cruz
+  - "Jo\xE3o Ot\xE1vio Bandeira Diniz"
+  - "Giovanni Lucca Fran\xE7a Da Silva"
+  - Geraldo Braz Junior
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - "Rodolfo Acatauass\xFA Nunes"
+  - Marcelo Gattass
+  publisher: Expert Systems with Applications
+  date: '2021-11-01'
+  link: https://doi.org/org/10.1016/j.eswa.2021.115452
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.engappai.2021.104440
+  title: Forecasting of individual electricity consumption using Optimized Gradient
+    Boosting Regression with Modified Particle Swarm Optimization
+  authors:
+  - Luis F.M. Sepulveda
+  - Petterson S. Diniz
+  - "Jo\xE3o O.B. Diniz"
+  - Stelmo M.B. Netto
+  - Carolina L.S. Cipriano
+  - "Alexandre C. Ara\xFAjo"
+  - Victor H.B. Lemos
+  - Alexandre C.P. Pessoa
+  - Darlan B.P. Quintanilha
+  - "Jo\xE3o D.S. Almeida"
+  - "Arist\xF3fanes C. Silva"
+  - Anselmo C. Paiva
+  - Geraldo Braz
+  - "M\xE1rcia I.A. Silva"
+  - Eliana M.G. Monteiro
+  - Italo F.S. Silva
+  - Eduardo C. Fernandes
+  publisher: Engineering Applications of Artificial Intelligence
+  date: '2021-10-01'
+  link: https://doi.org/org/10.1016/j.engappai.2021.104440
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/978-3-031-60665-6_14
+  title: Polyp Segmentation in Colonoscopy Images
+  authors:
+  - Marcio P. Ferreira
+  - Giulia De A. Freulon
+  - Daniel G. Piorsky
+  - Alexandre C. P. Pessoa
+  - Darlan B. P. Quintanilha
+  - "Arist\xF3fanes C. Silva"
+  publisher: Wireless Mobile Communication and Healthcare
+  date: '2024-01-01'
+  link: https://doi.org/org/10.1007/978-3-031-60665-6_14
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/978-3-031-60665-6_13
+  title: Abnormality Detection in Wireless Capsule Endoscopy Images Using Deep Features
+  authors:
+  - "Daniel G. P. De S\xE1"
+  - Giulia De A. Freulonx
+  - Marcio P. Ferreira
+  - Alexandre C. P. Pessoa
+  - Darlan B. P. Quintanilha
+  - "Arist\xF3fanes C. Silva"
+  publisher: Wireless Mobile Communication and Healthcare
+  date: '2024-01-01'
+  link: https://doi.org/org/10.1007/978-3-031-60665-6_13
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.compeleceng.2019.02.001
+  title: Temporal analysis of lung lesions through dynamic shape features
+  authors:
+  - Darlan Bruno Pontes Quintanilha
+  - "Jo\xE3o Ot\xE1vio Bandeira Diniz"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - Marcelo Gattass
+  publisher: Computers & Electrical Engineering
+  date: '2019-03-01'
+  link: https://doi.org/org/10.1016/j.compeleceng.2019.02.001
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.compbiomed.2012.09.003
+  title: Automatic segmentation of lung nodules with growing neural gas and support
+    vector machine
+  authors:
+  - "Stelmo Magalh\xE3es Barros Netto"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - "Rodolfo Acatauass\xFA Nunes"
+  - Marcelo Gattass
+  publisher: Computers in Biology and Medicine
+  date: '2012-11-01'
+  link: https://doi.org/org/10.1016/j.compbiomed.2012.09.003
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.cmpb.2009.07.006
+  title: Methodology for automatic detection of lung nodules in computerized tomography
+    images
+  authors:
+  - "Jo\xE3o Rodrigo Ferreira Da Silva Sousa"
+  - "Arist\xF3fanes Corr\u011Ba Silva"
+  - Anselmo Cardoso De Paiva
+  - "Rodolfo Acatauass\xFA Nunes"
+  publisher: Computer Methods and Programs in Biomedicine
+  date: '2010-04-01'
+  link: https://doi.org/org/10.1016/j.cmpb.2009.07.006
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.eswa.2018.06.010
+  title: Convolutional neural network and texture descriptor-based automatic detection
+    and diagnosis of glaucoma
+  authors:
+  - "Marcos Vin\xEDcius Dos Santos Ferreira"
+  - Antonio Oseas De Carvalho Filho
+  - "Alcilene Dal\xEDlia De Sousa"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Marcelo Gattass
+  publisher: Expert Systems with Applications
+  date: '2018-11-01'
+  link: https://doi.org/org/10.1016/j.eswa.2018.06.010
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.5753/sbcas.2021.16062
+  title: An automatic method for prostate segmentation on 3D MRI scans using local
+    phylogenetic indexes and XGBoost
+  authors:
+  - Giovanni L. F. Da Silva
+  - Francisco Y. C. De Oliveira
+  - "Jo\xE3o O. B. Diniz"
+  - Petterson S. Diniz
+  - Darlan B. P. Quintanilha
+  - "Arist\xF3fanes C. Silva"
+  - Anselmo C. De Paiva
+  - Elton A. A. De Cavalcanti
+  publisher: "Anais do XXI Simp\xF3sio Brasileiro de Computa\xE7\xE3o Aplicada \xE0\
+    \ Sa\xFAde (SBCAS 2021)"
+  date: '2021-06-15'
+  link: https://doi.org/org/10.5753/sbcas.2021.16062
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.5753/sbcas.2021.16055
+  title: "Segmenta\xE7\xE3o de cora\xE7\xE3o em tomografias computadorizadas utilizando\
+    \ atlas probabil\xEDstico e redes neurais convolucionais"
+  authors:
+  - "Jo\xE3o O. B. Diniz"
+  - Jonnison L. Ferreira
+  - Giovanni L. F. Da Silva
+  - Darlan B. P. Quintanilha
+  - "Arist\xF3fanes C. Silva"
+  - Anselmo Paiva
+  publisher: "Anais do XXI Simp\xF3sio Brasileiro de Computa\xE7\xE3o Aplicada \xE0\
+    \ Sa\xFAde (SBCAS 2021)"
+  date: '2021-06-15'
+  link: https://doi.org/org/10.5753/sbcas.2021.16055
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.5753/sbcas.2023.229576
+  title: "Detec\xE7\xE3o de COVID-19 em Imagens de Raio-X de T\xF3rax atrav\xE9s de\
+    \ Sele\xE7\xE3o Autom\xE1tica de Pr\xE9-processamento e de Rede Neural Convolucional"
+  authors:
+  - "Jo\xE3o O. B. Diniz"
+  - Darlan B. P. Quintanilha
+  - Antonio O. De Carvalho Filho
+  - Daniel L. Gomes Jr
+  - "Arist\xF3fanes C. Silva"
+  - Geraldo Braz Jr
+  - Anselmo C. De Paiva
+  - Daniel De S. Luz
+  publisher: "Anais do XXIII Simp\xF3sio Brasileiro de Computa\xE7\xE3o Aplicada \xE0\
+    \ Sa\xFAde (SBCAS 2023)"
+  date: '2023-06-27'
+  link: https://doi.org/org/10.5753/sbcas.2023.229576
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.5753/ercemapi.2022.226508
+  title: "Um Me\u0301todo Baseado em Radiomics e MLP para Diagno\u0301stico Automa\u0301\
+    tico de COVID-19 a partir de Raio-X de To\u0301rax"
+  authors:
+  - Emanuel L. C. De Sousa Filho
+  - Paulo G. S. Magno
+  - Camyla J. P. Santos
+  - Giovanni L. F. Da Silva
+  - "Joa\u0303o O. B. Diniz"
+  - Darlan B. P. Quintanilha
+  publisher: "Anais da X Escola Regional de Computa\xE7\xE3o do Cear\xE1, Maranh\xE3\
+    o e Piau\xED (ERCEMAPI 2022)"
+  date: '2022-09-28'
+  link: https://doi.org/org/10.5753/ercemapi.2022.226508
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.5753/sbcas.2024.2134
+  title: "Detec\xE7\xE3o e diagn\xF3stico autom\xE1tico de patologias na retina utilizando\
+    \ arquitetura baseada em Transformers"
+  authors:
+  - Thalisson J. C. Silva
+  - Saulo E. R. Fernandes
+  - "Jo\xE3o D. S. De Almeida"
+  - Darlan B. P. Quintanilha
+  - Geraldo Braz Junior
+  publisher: "Anais do XXIV Simp\xF3sio Brasileiro de Computa\xE7\xE3o Aplicada \xE0\
+    \ Sa\xFAde (SBCAS 2024)"
+  date: '2024-06-25'
+  link: https://doi.org/org/10.5753/sbcas.2024.2134
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.5753/sbcas.2024.2168
+  title: "Modelagem Matem\xE1tica para a Aloca\xE7\xE3o de Leitos de UTI com Diferentes\
+    \ Tipos de Leitos e Taxa de Ocupa\xE7\xE3o"
+  authors:
+  - Carlos Eduardo V. Gomes
+  - "Glaubos Cl\xEDmaco"
+  - "Jo\xE3o Augusto F. Nunes De Carvalho"
+  - Darlan Bruno Pontes Quintanilha
+  publisher: "Anais do XXIV Simp\xF3sio Brasileiro de Computa\xE7\xE3o Aplicada \xE0\
+    \ Sa\xFAde (SBCAS 2024)"
+  date: '2024-06-25'
+  link: https://doi.org/org/10.5753/sbcas.2024.2168
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.5753/sbcas.2024.2224
+  title: "Diagn\xF3stico de Tuberculose em Imagens de Radiografia utilizando CvT"
+  authors:
+  - Carlos M. Santos Neto
+  - Anderson L. Silva
+  - Alexandre C. P. Pessoa
+  - Darlan B. P. Quintanilha
+  - "Jo\xE3o D. S. De Almeida"
+  - Geraldo Braz Junior
+  - "Jo\xE3o O. B. Diniz"
+  publisher: "Anais do XXIV Simp\xF3sio Brasileiro de Computa\xE7\xE3o Aplicada \xE0\
+    \ Sa\xFAde (SBCAS 2024)"
+  date: '2024-06-25'
+  link: https://doi.org/org/10.5753/sbcas.2024.2224
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.5220/0011081700003179
+  title: 'Practical Findings from Applying Quality Assurance Activities in the Development
+    of Three Information Systems for Power Companies:'
+  authors:
+  - Geraldo Braz Junior
+  - Luis Rivero
+  - "Jo\xE3o Almeida"
+  - Simara Rocha
+  - "Arist\xF3fanes Silva"
+  - Anselmo Paiva
+  - Carlos Castro
+  - Darlan Quintanilha
+  - Italo Santos
+  - Erika Alves
+  - Samira Barbosa
+  publisher: Proceedings of the 24th International Conference on Enterprise Information
+    Systems
+  date: '2022-01-01'
+  link: https://doi.org/org/10.5220/0011081700003179
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/s11042-017-4608-y
+  title: Texture based on geostatistic for glaucoma diagnosis from fundus eye image
+  authors:
+  - Jefferson Alves De Sousa
+  - Anselmo Cardoso De Paiva
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - "Aristofanes Corr\xEAa Silva"
+  - Geraldo Braz Junior
+  - Marcelo Gattass
+  publisher: Multimedia Tools and Applications
+  date: '2017-09-01'
+  link: https://doi.org/org/10.1007/s11042-017-4608-y
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.eswa.2013.07.034
+  title: A mass classification using spatial diversity approaches in mammography images
+    for false positive reduction
+  authors:
+  - Geraldo Braz Junior
+  - Simara Vieira Da Rocha
+  - Marcelo Gattass
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  publisher: Expert Systems with Applications
+  date: '2013-12-01'
+  link: https://doi.org/org/10.1016/j.eswa.2013.07.034
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1371/journal.pone.0251591
+  title: Automatic segmentation of retinal layers in OCT images with intermediate
+    age-related macular degeneration using U-Net and DexiNed
+  authors:
+  - Jefferson Alves Sousa
+  - Anselmo Paiva
+  - "Arist\xF3fanes Silva"
+  - "Jo\xE3o Dallyson Almeida"
+  - Geraldo Braz Junior
+  - "Jo\xE3o Ot\xE1vio Diniz"
+  - Weslley Kelson Figueredo
+  - Marcelo Gattass
+  publisher: PLOS ONE
+  date: '2021-05-14'
+  link: https://doi.org/org/10.1371/journal.pone.0251591
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.cmpb.2021.106259
+  title: Bayesian convolutional neural network estimation for pediatric pneumonia
+    detection and diagnosis
+  authors:
+  - Vandecia Fernandes
+  - Geraldo Braz Junior
+  - Anselmo Cardoso De Paiva
+  - "Arist\xF3fanes Correa Silva"
+  - Marcelo Gattass
+  publisher: Computer Methods and Programs in Biomedicine
+  date: '2021-09-01'
+  link: https://doi.org/org/10.1016/j.cmpb.2021.106259
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.eswa.2016.08.070
+  title: Texture analysis of masses malignant in mammograms images using a combined
+    approach of diversity index and local binary patterns distribution
+  authors:
+  - Simara Vieira Da Rocha
+  - Geraldo Braz Junior
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - Marcelo Gattass
+  publisher: Expert Systems with Applications
+  date: '2016-12-01'
+  link: https://doi.org/org/10.1016/j.eswa.2016.08.070
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/s11042-018-6259-z
+  title: Breast cancer detection in mammography using spatial diversity, geostatistics,
+    and concave geometry
+  authors:
+  - Geraldo Braz Junior
+  - Simara V. Da Rocha
+  - "Jo\xE3o D. S. De Almeida"
+  - Anselmo C. De Paiva
+  - "Arist\xF3fanes C. Silva"
+  - Marcelo Gattass
+  publisher: Multimedia Tools and Applications
+  date: '2019-05-01'
+  link: https://doi.org/org/10.1007/s11042-018-6259-z
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/s11042-018-6429-z
+  title: Glaucoma diagnosis in fundus eye images using diversity indexes
+  authors:
+  - "Jos\xE9 Denes Lima Ara\xFAjo"
+  - Johnatan Carvalho Souza
+  - Otilio Paulo Silva Neto
+  - Jefferson Alves De Sousa
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - Anselmo Cardoso De Paiva
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Geraldo Braz Junior
+  - Marcelo Gattass
+  publisher: Multimedia Tools and Applications
+  date: '2019-05-01'
+  link: https://doi.org/org/10.1007/s11042-018-6429-z
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/IWSSIP.2018.8439477
+  title: Glaucoma Diagnosis over Eye Fundus Image through Deep Features
+  authors:
+  - Alan Carlos de Moura Lima
+  - Lucas Bezerra Maia
+  - Roberto Matheus Pinheiro Pereira
+  - Geraldo Braz Junior
+  - Joao Dallyson Sousa de Almeida
+  - Anselmo Cardoso de Paiva
+  publisher: 2018 25th International Conference on Systems, Signals and Image Processing
+    (IWSSIP)
+  date: '2018-06-01'
+  link: https://doi.org/g8n2qr
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.ins.2022.07.059
+  title: Assessing the impact of data augmentation and a combination of CNNs on leukemia
+    classification
+  authors:
+  - "Ma\xEDla L. Claro"
+  - Rodrigo De M.S. Veras
+  - Andre M. Santana
+  - Luis Henrique S. Vogado
+  - Geraldo Braz Junior
+  - Fatima N.S. De Medeiros
+  - "Jo\xE3o Manuel R.S. Tavares"
+  publisher: Information Sciences
+  date: '2022-09-01'
+  link: https://doi.org/org/10.1016/j.ins.2022.07.059
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/IWSSIP.2018.8439373
+  title: Evaluation of Melanoma Diagnosis using Deep Features
+  authors:
+  - Lucas Bezerra Maia
+  - Alan Lima
+  - Roberto Matheus Pinheiro Pereira
+  - Geraldo Braz Junior
+  - Joao Dallyson Sousa de Almeida
+  - Anselmo Cardoso de Paiva
+  publisher: 2018 25th International Conference on Systems, Signals and Image Processing
+    (IWSSIP)
+  date: '2018-06-01'
+  link: https://doi.org/g8n2qw
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/s11042-018-6390-x
+  title: Diagnosis of breast tissue in mammography images based local feature descriptors
+  authors:
+  - "Caio Eduardo Falc\xE3o Matos"
+  - Johnatan Carvalho Souza
+  - "Jo\xE3o Ot\xE1vio Bandeira Diniz"
+  - Geraldo Braz Junior
+  - Anselmo Cardoso De Paiva
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - Simara Vieira Da Rocha
+  - "Arist\xF3fanes Correa Silva"
+  publisher: Multimedia Tools and Applications
+  date: '2019-05-01'
+  link: https://doi.org/org/10.1007/s11042-018-6390-x
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/978-3-319-93000-8_45
+  title: Sign Language Recognition Based on 3D Convolutional Neural Networks
+  authors:
+  - Geovane M. Ramos Neto
+  - Geraldo Braz Junior
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - Anselmo Cardoso De Paiva
+  publisher: Image Analysis and Recognition
+  date: '2018-01-01'
+  link: https://doi.org/org/10.1007/978-3-319-93000-8_45
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/978-3-319-13969-2_9
+  title: 'AGITO: Virtual Reality Environment for Power Systems Substations Operators
+    Training'
+  authors:
+  - Tiago Ramos Ribeiro
+  - Paulo Roberto Jansen Dos Reis
+  - "Geraldo Braz J\xFAnior"
+  - Anselmo Cardoso De Paiva
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Ivana Marcia Oliveira Maia
+  - "Ant\xF4nio S\xE9rgio Ara\xFAjo"
+  publisher: Augmented and Virtual Reality
+  date: '2014-01-01'
+  link: https://doi.org/org/10.1007/978-3-319-13969-2_9
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.cmpb.2019.105269
+  title: Interferometer eye image classification for dry eye categorization using
+    phylogenetic diversity indexes for texture analysis
+  authors:
+  - Luana Batista Da Cruz
+  - Johnatan Carvalho Souza
+  - Jefferson Alves De Sousa
+  - Alex Martins Santos
+  - Anselmo Cardoso De Paiva
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Geraldo Braz Junior
+  - Marcelo Gattass
+  publisher: Computer Methods and Programs in Biomedicine
+  date: '2020-05-01'
+  link: https://doi.org/org/10.1016/j.cmpb.2019.105269
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ITAB.2007.4407388
+  title: Breast Tissues Classification Based on the Application of Geostatistical
+    Features and Wavelet Transform
+  authors:
+  - Geraldo Braz
+  - Erick Correa da Silva
+  - Anselmo Cardoso de Paiva
+  - Aristofanes Correa Silva
+  publisher: 2007 6th International Special Topic Conference on Information Technology
+    Applications in Biomedicine
+  date: '2007-11-01'
+  link: https://doi.org/dtpjb3
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.jvcir.2019.102597
+  title: An hybrid feature space from texture information and transfer learning for
+    glaucoma classification
+  authors:
+  - "Ma\xEDla Claro"
+  - Rodrigo Veras
+  - "Andr\xE9 Santana"
+  - "Fl\xE1vio Ara\xFAjo"
+  - Romuere Silva
+  - "Jo\xE3o Almeida"
+  - Daniel Leite
+  publisher: Journal of Visual Communication and Image Representation
+  date: '2019-10-01'
+  link: https://doi.org/org/10.1016/j.jvcir.2019.102597
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.compbiomed.2011.11.001
+  title: Computational methodology for automatic detection of strabismus in digital
+    images through Hirschberg test
+  authors:
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Anselmo Cardoso De Paiva
+  - Jorge Antonio Meireles Teixeira
+  publisher: Computers in Biology and Medicine
+  date: '2012-01-01'
+  link: https://doi.org/org/10.1016/j.compbiomed.2011.11.001
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1093/molbev/msz224
+  title: 'Along the Indian Ocean Coast: Genomic Variation in Mozambique Provides New
+    Insights into the Bantu Expansion'
+  authors:
+  - Armando Semo
+  - "Magdalena Gay\xE0-Vidal"
+  - Cesar Fortes-Lima
+  - "B\xE9r\xE9nice Alard"
+  - Sandra Oliveira
+  - "Jo\xE3o Almeida"
+  - "Ant\xF3nio Prista"
+  - Albertino Damasceno
+  - Anne-Maria Fehn
+  - Carina Schlebusch
+  - Jorge Rocha
+  publisher: Molecular Biology and Evolution
+  date: '2020-02-01'
+  link: https://doi.org/org/10.1093/molbev/msz224
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.cmpb.2017.01.002
+  title: Automatic diagnosis of strabismus in digital videos through cover test
+  authors:
+  - Thales Levi Azevedo Valente
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Jorge Antonio Meireles Teixeira
+  - Marcelo Gattass
+  publisher: Computer Methods and Programs in Biomedicine
+  date: '2017-03-01'
+  link: https://doi.org/org/10.1016/j.cmpb.2017.01.002
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1007/s10278-014-9758-0
+  title: Computer-Aided Methodology for Syndromic Strabismus Diagnosis
+  authors:
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Jorge Antonio Meireles Teixeira
+  - Anselmo Cardoso Paiva
+  - Marcelo Gattass
+  publisher: Journal of Digital Imaging
+  date: '2015-08-01'
+  link: https://doi.org/org/10.1007/s10278-014-9758-0
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1186/1745-6215-10-38
+  title: 'Rationale, design, and baseline characteristics of the Acetylcystein for
+    Contrast-Induced nephropaThy (ACT) Trial: a pragmatic randomized controlled trial
+    to evaluate the efficacy of acetylcysteine for the prevention of contrast-induced
+    nephropathy'
+  authors: []
+  publisher: Trials
+  date: '2009-12-01'
+  link: https://doi.org/org/10.1186/1745-6215-10-38
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:org/10.1016/j.compbiomed.2015.05.025
+  title: Surgical planning for horizontal strabismus using Support Vector Regression
+  authors:
+  - "Jo\xE3o Dallyson Sousa De Almeida"
+  - "Arist\xF3fanes Corr\xEAa Silva"
+  - Jorge Antonio Meireles Teixeira
+  - Anselmo Cardoso Paiva
+  - Marcelo Gattass
+  publisher: Computers in Biology and Medicine
+  date: '2015-08-01'
+  link: https://doi.org/org/10.1016/j.compbiomed.2015.05.025
+  plugin: sources.py
+  file: sources.yaml

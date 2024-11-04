@@ -1,0 +1,69 @@
+---
+layout: manager
+title: Notícias
+---
+
+  <div class="informacoesdapaginaadmin">
+    <h1 class="titulopaginaadmin">Notícias</h1>
+    <div class="barraebutton">
+      <div class="search-bar">
+        {% include search-box.html %}
+        {% include search-info.html %}
+      </div>
+      <button class="add-button" onclick="window.location.href='/gerenciador/cadastrarnoticia'">+ ADICIONAR NOTÍCIA</button>
+    </div>
+    
+    <div class="controllertable">
+      <table id="sortableTable">
+        <thead class="dadopesquisado">
+          <tr>
+              <th>#</th>
+              <th>
+                  Titúlo
+                  <button class="ordenar" onclick="sortTable(1, this)">
+                      <i class="fa-solid fa-arrow-down-a-z"></i>
+                  </button>
+              </th>
+              <th>
+                  Autores
+                  <button class="ordenar" onclick="sortTable(2, this)">
+                      <i class="fa-solid fa-arrow-down-a-z"></i>
+                  </button>
+              </th>
+              <th>
+                  Ano
+                  <button class="ordenar" onclick="sortTable(3, this)">
+                      <i class="fa-solid fa-arrow-down-a-z"></i>
+                  </button>
+              </th>
+              <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="dadopesquisado">
+            <td>0</td>
+            <td>Maria Silva</td>
+            <td>maria@email.com</td>
+            <td>Gerente</td>
+            <td>
+                <button class="action-button view">🔗</button>
+                <button class="action-button edit">✏️</button>
+                <button class="action-button delete">🗑️</button>
+            </td>
+          </tr>
+          <tr class="dadopesquisado">
+            <td>1</td>
+            <td>Ana Costa</td>
+            <td>ana@email.com</td>
+            <td>Desenvolvedor</td>
+            <td>
+              <button class="action-button view">🔗</button>
+              <button class="action-button edit">✏️</button>
+              <button class="action-button delete">🗑️</button>
+            </td>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+

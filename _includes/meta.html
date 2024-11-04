@@ -1,0 +1,47 @@
+{% assign filename = page.path | split: "/" | last %}
+{% if page.name and page.name != filename %}
+  {% assign title = page.name %}
+{% elsif page.title %}
+  {% assign title = page.title %}
+{% else %}
+  {% assign title = nil %}
+{% endif %}
+
+{% assign fulltitle = "" %}
+{% if title %}
+  {% assign fulltitle = title %}
+{% endif %}
+{% if site.title %}
+  {% assign fulltitle = fulltitle | append: " | " | append: site.title %}
+{% endif %}
+
+{% assign subtitle = site.subtitle %}
+{% assign description = page.description | default: site.description %}
+
+{% if site.subtitle %}
+  {% capture description -%}
+    {{ site.subtitle }}. {{ description }}
+  {%- endcapture %}
+{% endif %}
+
+{% capture url -%}
+  {{ site.url }}{{ site.baseurl }}
+{%- endcapture %}
+
+{% assign icon_png = "/assets/images/icon.png" %}
+{% assign icon_jpg = "/assets/images/icon.jpg" %}
+{% assign icon = icon_png | default: icon_jpg | relative_url %}
+
+{% assign share_jpg = "/assets/images/share.jpg" %}
+{% assign share_png = "/assets/images/share.png" %}
+{% assign share = share_jpg | default: share_png | relative_url %}
+
+{% assign published = page.date | date_to_xmlschema %}
+{% assign updated = page.last_modified_at | date_to_xmlschema %}
+{% assign feed = "feed.xml" | absolute_url %}
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ fulltitle }}</title>
+<link rel="icon" href="{{ icon }}">
+<meta name="title" content="{{ title }}">
+<meta name="description" content="{{ description }}">

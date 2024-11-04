@@ -1,0 +1,49 @@
+---
+layout: manager
+title: Projetos
+---
+
+  <div class="informacoesdapaginaadmin">
+    <h1 class="titulopaginaadmin">Projetos</h1>
+    <div class="barraebutton">
+      <div class="search-bar">
+        {% include search-box.html %}
+        {% include search-info.html %}
+      </div>
+      <button class="add-button" onclick="window.location.href='/gerenciador/cadastrarprojeto'">+ ADICIONAR PROJETO</button>
+    </div>
+    <div class="controllertable">
+      <table id="sortableTable">
+        <thead class="dadopesquisado">
+          <tr>
+              <th>#</th>
+              <th>
+                  Título
+                  <button class="ordenar" onclick="sortTable(1, this)">
+                      <i class="fa-solid fa-arrow-down-a-z"></i>
+                  </button>
+              </th>
+              <th>
+                  Subtítulo
+                  <button class="ordenar" onclick="sortTable(2, this)">
+                      <i class="fa-solid fa-arrow-down-a-z"></i>
+                  </button>
+              </th>
+              <th>
+                  Grupo
+                  <button class="ordenar" onclick="sortTable(3, this)">
+                      <i class="fa-solid fa-arrow-down-a-z"></i>
+                  </button>
+              </th>
+              <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+        </tbody>
+    </table>
+  </div>
+</div>
+
+
+
+  

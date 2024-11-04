@@ -1,0 +1,75 @@
+---
+---
+
+.barraebutton{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.search-bar .search-box{
+  height: 100%;
+  padding: 0;
+}
+.add-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 20%;
+  max-height: 3rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 15px;
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f6f9;
+  color: #555;
+ 
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.action-button {
+  padding: 5px;
+  margin: 0 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.action-button.view {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.action-button.edit {
+  background-color: #FFA500;
+  color: white;
+}
+
+.action-button.delete {
+  background-color: #FF6347;
+  color: white;
+}
+

@@ -1,0 +1,49 @@
+---
+---
+
+$wrap: 600px;
+
+.post-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: var(--gray);
+  padding: 0 10%;
+  width: 100%;
+}
+.post-nav span a{
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.post-nav > :first-child {
+  text-align: left;
+}
+
+.post-nav > :last-child {
+  text-align: right;
+}
+
+.post-nav > :first-child .icon {
+  margin-right: 0.5em;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.post-nav > :last-child .icon {
+  margin-left: 0.5em;
+  font-size: 24px;
+  text-decoration: none;
+
+}
+
+@media (max-width: $wrap) {
+  .post-nav {
+    align-items: center;
+  }
+
+  .post-nav > * {
+    text-align: center !important;
+  }
+}

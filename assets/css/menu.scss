@@ -1,0 +1,54 @@
+---
+---
+
+.section-menu{
+  padding: 30px 0 30px 5%;
+  width: 20%;  
+}
+/* Estilo de hover para o menu da página "Membros" */
+#menumembros .MenuSobreNos a:hover {
+  color: var(--amareloprimary); 
+}
+
+/* Estilo de hover para o menu da página "Sobre Nós" */
+#menusobrenos .MenuSobreNos a:hover {
+  color: var(--vermelhoprimary); /* Cor quando o link está em hover */
+}
+
+.MenuSobreNos h3 {
+  font-size: 18px;
+  float: left;
+}
+.MenuSobreNos {
+  display: flex;
+  list-style: none; /* Remove os marcadores da lista */
+  flex-direction: column;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  gap: 20px;
+  padding: 10px; /* Remove o padding do menu */
+  margin: 0; /* Remove a margem do menu */
+  align-items: flex-start;
+}
+
+.menu-item-i {
+  padding: 5px 10px; /* Espaçamento para os itens do menu */
+  text-decoration: none; /* Remove o sublinhado */
+  
+  background-color: transparent; 
+  text-align: left; /* Alinha o texto à esquerda */
+}
+
+.MenuSobreNos a {
+  font-size: 18px;
+  color: inherit; /* Para herdar a cor do elemento pai */
+  text-decoration: none; /* Remove o sublinhado */
+  padding: 5px 0; /* Adiciona um pouco de espaço vertical */
+  display: block; /* Faz com que o link ocupe toda a área do item do menu */
+
+}
+
+a.menu-item-i{
+  flex-wrap: nowrap;
+  text-decoration: none;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  {% include head.html %}
+  
+  <body class=body-manager>
+    
+      <nav id="sidebar" class="sidebar">
+        <div class="headersidebarenav">
+          <div class="sidebar-header">
+            <div class="sidebar-title">
+              <img id="userLogo" class="logouser" src="/assets/images/icones/icone_membro.svg">
+              <h3 id="userName" class="title-user">Administrador</h3>
+              <button id="sidebarCollapse" class="button-sidebar">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+            </div>
+            <p id="userEmail" class="sidebar-email">lorem ipsum</p>
+          </div>
+          <ul id="nav-sidebar" class="nav-sidebar components">
+            <li>
+              <a href="/gerenciador/">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li>
+              <a href="/gerenciador/membros">
+                <i class="fa-solid fa-users"></i>
+                <span>Membros</span>
+              </a>
+            </li>
+            <li>
+              <a href="/gerenciador/noticias">
+                <i class="fa-solid fa-newspaper"></i>
+                <span>Notícias</span>
+              </a>
+            </li>
+            <li>
+              <a href="/gerenciador/projetos/">
+                <i class="fa-solid fa-file-code"></i>
+                <span>Projetos</span>
+              </a>
+            </li>
+            <li>
+              <a href="/gerenciador/publicacoes/">
+                <i class="fa-solid fa-file-lines"></i>                
+                <span>Publicações</span>
+              </a>
+            </li>
+            <li>
+              <a href="/gerenciador/laboratorios/">
+                <i class="fa-solid fa-network-wired"></i>
+                <span>Laboratórios</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-footer">
+          <a id="logoutBtn" class="iconetitlelogout">
+            <button class="button-logout">
+              <i class="fa-solid fa-right-to-bracket"></i>
+            </button>
+            <h3 class="sidebar-logout">Sair</h3>
+          </a>
+        </div>
+    </nav>
+
+
+      <div id="content" class="content">
+
+        <main id="main-manager" class="main-manager">
+          
+          {{ content }} <!-- Aqui entra o conteúdo da página -->
+        </main>
+
+      </div>
+
+  </body>
+  {% include scripts.html %}
+
+</html>

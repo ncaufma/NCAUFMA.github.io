@@ -1,0 +1,317 @@
+---
+---
+
+$logo-big: 80px; // Define a altura do logotipo grande (80px).
+$logo: 40px; // Define a altura do logotipo padrão (40px).
+$big-padding: 100px; // Define um espaçamento grande para padding (100px).
+$collapse: 700px; // Define o ponto de colapso (700px) para a responsividade.
+$sticky: true; // Define se o cabeçalho será fixo ou não.
+
+// Estilo do header
+header {
+  display: flex;
+  flex-direction: row; 
+  background-color: var(--white); 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px 50px; 
+  font-family: var(--font);
+  position: fixed !important; 
+  width: 100%;
+  top: 0; 
+  z-index: 10 !important; 
+}
+
+
+header a {
+  text-decoration: none; 
+  font-size: 1rem; 
+}
+
+
+.home {
+  display: flex; 
+  align-items: center;
+}
+
+
+.logo {
+  width: 6rem;
+}
+
+
+.nav-header {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap; 
+  gap: 30px; 
+  font-family: var(--body); 
+  text-transform: uppercase; 
+}
+
+
+
+
+#home.active::after,
+#home:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+  height: 3px;
+  background-color: var(--roxoprimary); /* Cor do hover e ativo para home */
+  transition: all 0.3s ease;
+}
+
+#sobrenos.active::after,
+#sobrenos:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+  height: 3px;
+  background-color: var(--vermelhoprimary); /* Cor do hover e ativo para sobre nós */
+  transition: all 0.3s ease;
+}
+
+#membros.active::after,
+#membros:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+  height: 3px;
+  background-color: var(--amareloprimary); /* Cor do hover e ativo para membros */
+  transition: all 0.3s ease;
+}
+
+#noticias.active::after,
+#noticias:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+  height: 3px;
+  background-color: var(--roxosecondary); /* Cor do hover e ativo para notícias */
+  transition: all 0.3s ease;
+}
+
+#publicacoes.active::after,
+#publicacoes:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+  height: 3px;
+  background-color: var(--vermelhosecondary); /* Cor do hover e ativo para projetos */
+  transition: all 0.3s ease;
+}
+
+#projetos.active::after,
+#projetos:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: -50px;
+  height: 3px;
+  background-color: var(--amarelosecondary); /* Cor do hover e ativo para publicações */
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+.nav-header ul.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  gap: 30px;
+  color: var(--text);
+  align-items: center;
+
+}
+
+
+.nav-item > a {
+  position: relative;
+  color: var(--text);
+  text-decoration: none; 
+}
+
+.mobile-menu {
+  display: none;
+}
+
+
+
+
+.nav-header {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-list .nav-item a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+
+.gtranslate_wrapper{
+  
+}
+#gt_float_wrapper{
+  
+  top: 35px !important;
+  right: 50px !important;
+  z-index: 0 !important;
+}
+
+.gt_float_switcher {
+  font-family: Roboto !important;
+  font-size: 20px   !important; 
+  border-radius: 20px !important;
+  box-shadow: none !important;
+  border: solid 2px var(--roxoprimary);
+}
+.gt_float_switcher .gt_options a {
+  width: 100% !important;
+  display: flex !important;
+}
+.gt_float_switcher .gt_options a.gt-current {
+  display: none !important;
+}
+.gt-current-lang{
+  display: flex;
+}
+
+
+/* Estilos para telas menores que 1020px */
+@media (max-width: 1020px) {
+  .nav-header {
+    display: none;
+  }
+  .gtranslate_wrapper{
+    display: none;
+  }
+
+  .mobile-menu {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .mobile-menu .menu-icon {
+    font-size: 30px;
+    color: #333;
+  }
+
+  /* Quando o menu móvel estiver ativo */
+  .nav-header.open{
+    display: block; /* Exibe o menu e o seletor de idioma ao clicar no ícone */
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+    width: 250px;
+    height: 100vh;
+    padding: 50px;
+  }
+
+  .gtranslate_wrapper.open{
+    display: block; /* Exibe o menu e o seletor de idioma ao clicar no ícone */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #gt_float_wrapper{
+    top: 360px !important;
+    right: 50px !important;
+    left: 50px;
+    z-index: 0 !important;
+  }
+  
+
+  .nav-header ul.nav-list {
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start
+    ;
+  
+  }
+
+  .nav-list .nav-item a {
+    font-size: 18px;
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  
+  /* Estilo para overlay quando o menu está ativo */
+  .mobile-nav-active {
+    overflow: hidden; /* Evita o scroll quando o menu móvel está aberto */
+  }
+
+  #home.active::after,
+  #home:hover::after,
+  #sobrenos.active::after,
+  #sobrenos:hover::after,
+  #membros.active::after,
+  #membros:hover::after,
+  #noticias.active::after,
+  #noticias:hover::after,
+  #publicacoes.active::after,
+  #publicacoes:hover::after,
+  #projetos.active::after,
+  #projetos:hover::after {
+    content: none; 
+    
+  }
+
+  /* Aplica fundo colorido nos itens ativos ou ao passar o mouse */
+  #home.active,
+  #home:hover {
+    color: var(--roxoprimary);
+  }
+
+  #sobrenos.active,
+  #sobrenos:hover {
+    color: var(--vermelhoprimary);
+  }
+
+  #membros.active,
+  #membros:hover {
+    color: var(--amareloprimary);
+  }
+
+  #noticias.active,
+  #noticias:hover {
+    color: var(--roxosecondary);
+  }
+
+  #publicacoes.active,
+  #publicacoes:hover {
+    color: var(--vermelhosecondary);
+  }
+
+  #projetos.active,
+  #projetos:hover {
+    color: var(--amarelosecondary);
+  }
+}

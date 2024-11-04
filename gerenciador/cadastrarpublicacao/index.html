@@ -1,0 +1,47 @@
+---
+layout: manager
+title: Cadastrar Publicação
+---
+<h1 class="tituloForm">Cadastre uma nova publicação</h1>
+
+<form id="form_projeto" onsubmit="return false" enctype="multipart/form-data">
+
+    <div id="form_fields">
+        <label for="titulo" class="labelName">Título </label>
+        <input type="text" name="proj_titulo" id="titulo" required placeholder="Insira seu título aqui" />
+        
+        <label for="subtitulo" class="labelName">Subtítulo </label>
+        <input type="text" name="proj_subtitulo" id="subtitulo" required placeholder="Insira seu subtítulo aqui"/>
+
+        <label for="grupo_projeto" class="labelName">Grupo</label>
+        <input list="grupos" id="grupo" name="grupo_projeto" placeholder="Selecione seu grupo" class="custom-input">
+        <datalist id="grupos">
+            <option value="NCA"></option>
+            <option value="Equatorial"></option>
+        </datalist>
+        
+        <label for="filefoto" class="labelName" id="labelFoto">Imagem</label>
+        <input type="file" name="filefoto" id="filefoto" accept="image/*">
+        
+
+        <label for="link_projeto" class="labelName">Link do projeto</label>
+        <input type="text" name="link_projeto" id = "link_input" placeholder="Ex: https://github.com/...">
+        
+
+        <label for="desc_projeto" class="labelName">Descrição</label>
+        <textarea name="desc_projeto" id="txt_desc_proj"></textarea>
+
+
+        <label for="chip_projeto" class="labelName">Tags</label>
+        <input type="text" name="chip" id="addChip" placeholder="Ex: Machine Learning, PLN">
+        <div class="chip-container"></div>
+
+        <div class="buttonRow">
+            <button type="button" class="cancelarButton">Cancelar</button>
+            <button type="submit" class="enviarButton" id="enviarButton">Enviar</button>
+        </div>
+    </div>
+
+    
+</form>
+

@@ -1,0 +1,90 @@
+{% assign publicacoes = include %}
+
+<div class="cardpublicacao">
+
+  
+      {% if publicacoes.link %}
+        <a
+        href="{{ publicacoes.link | relative_url }}"
+        class="cardpublicacao-link"
+        >
+      {% endif %}
+      
+  
+      {% if publicacoes.image %}
+        <img class="cardpublicacao-imagem"
+          src="{{ publicacoes.image | relative_url }}"
+          alt="{{ publicacoes.title | default: "publicacoes image" }}"
+        >
+      {% endif %}
+
+      <div class="cardpublicacao-texto">
+        {% assign type = site.data.types[publicacoes.type] %}
+        {% include icon.html icon=type.icon %}
+
+        {{ publicacoes.title | default: "[no title info]" }}
+    
+        <div
+          class="cardpublicacao-autores"
+          tabindex="0"
+        >
+          {{
+            publicacoes.authors
+            | join: ","
+            | split: ","
+            | array_carve: 5
+            | join: ", "
+            | markdownify
+            | remove: "<p>" | remove: "</p>"
+            | default: "[no author info]"
+          }}
+        </div>
+
+        <div class="cardpublicacao-detalhes">
+          <span class="cardpublicacao-publicadoem">
+            {{- publicacoes.publisher | default: "[no publisher info]" -}}
+          </span>
+          &nbsp;·&nbsp;
+          <span class="cardpublicacao-data">
+            {{- publicacoes.date | default: "[no date info]" | date: "%d %b %Y" -}}
+          </span>
+          &nbsp;·&nbsp;
+          <span class="cardpublicacao-doi">
+            {{- publicacoes.id | default: "[no id info]" -}}
+          </span>
+        </div>
+
+        {% if include.style == "rich" %}
+          {% if publicacoes.description %}
+            <div class="cardpublicacao-descricao">
+              {{
+                publicacoes.description
+                | markdownify
+                | remove: "<p>"
+                | remove: "</p>"
+              }}
+            </div>
+          {% endif %}
+
+          {% if publicacoes.buttons.size > 0 %}
+            <div class="cardpublicacao-buttons">
+              {% for button in publicacoes.buttons %}
+                {%
+                  include button.html
+                  type=button.type
+                  icon=button.icon
+                  text=button.text
+                  link=button.link
+                  style="bare"
+                %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if publicacoes.tags.size > 0 or publicacoes.repo %}
+            {% include tags.html tags=publicacoes.tags repo=publicacoes.repo %}
+          {% endif %}
+        {% endif %}
+      </div>
+  </a>
+</div>

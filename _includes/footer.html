@@ -1,0 +1,78 @@
+<footer>
+  <div style="display: flex; width: 100%; height: 7px; white-space: normal;">
+    <div style="flex: 1; background-color: var(--roxoprimary);"></div>
+    <div style="flex: 1; background-color: var(--vermelhoprimary);"></div>
+    <div style="flex: 1; background-color: var(--amareloprimary);"></div>
+    <div style="flex: 1; background-color: var(--roxosecondary);"></div>
+    <div style="flex: 1; background-color: var(--vermelhosecondary);"></div>
+    <div style="flex: 1; background-color:var(--amarelosecondary);"></div>
+  </div>
+  <div class="informacoesecreditos">
+    
+    <div class="logofooter" >
+      <a href="{{ "/" | relative_url }}" class="home">
+        <span>
+          <img class="logo" src="/assets/images/logo.svg" alt="logo">
+        </span>
+      </a>
+      <p style="margin: 0 0 0 0; font-weight: 700;"> 
+        <strong>2024 - NCA - UFMA group</strong>
+      </p>
+    </div>
+
+  
+    <div class="contatofooter">
+
+      <div class="TituloContato">
+        <p> Contatos</p>
+      </div>
+      <div class="linkscontato">
+        <div class = "iconenome">
+          <a href="https://www.google.com/maps/place/N%C3%BAcleo+de+computa%C3%A7%C3%A3o+Aplicada+UFMA/@-2.558817,-44.307517,16z/data=!4m6!3m5!1s0x7f68f5cf9040faf:0xfcfade37aaad117d!8m2!3d-2.5588169!4d-44.3075172!16s%2Fg%2F11ggfy_zdy?hl=pt-BR&entry=ttu&g_ep=EgoyMDI0MTAyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Google Maps">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <p>NCA Lab, CCET Building<br>
+              Av. dos Portugueses, 1966 - Vila Bacanga<br>
+              São Luís - MA, 65080-805
+            </p>
+          </a> 
+        </div>
+        <div class="iconenome">
+          <a href="mailto:nca@nca.ufma.br" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+            <p>nca@nca.ufma.br</p>
+        </a> 
+        </div>
+        <div class = "iconenome">
+          <a href="https://www.linkedin.com/company/ncaufma/" target="_blank" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+            <p>ncaufma</p>
+          </a> 
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="Maps" >
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.8401600882794!2d-44.31238811538452!3d-2.558811531670127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68f5cf9040faf%3A0xfcfade37aaad117d!2sN%C3%BAcleo%20de%20computa%C3%A7%C3%A3o%20Aplicada%20UFMA!5e0!3m2!1spt-BR!2sbr!4v1729514443821!5m2!1spt-BR!2sbr" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <hr class="linhafooter">
+
+  <div style="margin-top: 0px; text-align: center; padding: 0 5%;">
+    &copy; {{ site.time | date: "%Y" }}
+    {{ site.title }}
+    &nbsp; | &nbsp; Built with
+    <a href="https://github.com/greenelab/lab-website-template">
+      Lab Website Template
+    </a>
+  </div>
+</footer>

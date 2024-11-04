@@ -1,0 +1,140 @@
+{% assign emptyarray = "" | split: "," %}
+
+{% assign data = site.data[include.data]
+  | default: site[include.data]
+  | default: emptyarray
+  | data_filter: include.filters
+%}
+
+{%- if include.component == "noticias" or include.component == "publicacoes" -%}
+  {% assign grouped_data = data
+    | group_by_exp: "d", "d.date | date: '%Y'"
+    | sort: "name"
+    | reverse
+  %}
+{%- elsif include.component == "projetos" -%}
+  {% assign grouped_data = data
+    | group_by: "group"
+    | sort: "name"
+  %}
+{%- elsif include.component == "membros" -%}
+  {% assign grouped_data = data
+    | group_by: "role"
+  %}
+
+  {% assign role_order = "Professor,Doutorado,Mestrado,Graduação,Ex-aluno" | split: "," %}
+  
+  {%- assign ordered_grouped_data = "" | split: "," %}
+  
+  {% for role in role_order %}
+    {% for group in grouped_data %}
+      {% if group.name == role %}
+        {% assign ordered_grouped_data = ordered_grouped_data | push: group %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+  
+  {% assign grouped_data = ordered_grouped_data %}
+{%- endif -%}
+
+{% assign component_tags = emptyarray %}
+
+{% if include.component == "noticias" %}
+  {% for item in data %}
+    {% assign item_tags = item.tags | default: emptyarray %}
+    {% assign component_tags = component_tags | concat: item_tags %}
+  {% endfor %}
+  {% assign component_tags = component_tags | uniq %}
+
+  <section class="noticias">
+    {% include tags.html tags=component_tags %}
+    {% include search-info.html %}
+{% elsif include.component == "projetos" %}
+  {% for item in data %}
+    {% assign item_tags = item.tags | default: emptyarray %}
+    {% assign component_tags = component_tags | concat: item_tags %}
+  {% endfor %}
+  {% assign component_tags = component_tags | uniq %}
+
+  <section class="projetos">
+    {% include tags.html tags=component_tags %}
+    {% include search-info.html %}
+    
+{% elsif include.component == "membros" %}
+  <section class="membros">
+{% elsif include.component == "publicacoes" %}
+  {% for item in data %}
+    {% assign item_tags = item.tags | default: emptyarray %}
+    {% assign component_tags = component_tags | concat: item_tags %}
+  {% endfor %}
+  {% assign component_tags = component_tags | uniq %}
+
+  <section class="publicacoes">
+    {% include tags.html tags=component_tags %}
+    {% include search-info.html %}
+{% endif %}
+
+  {% for group in grouped_data %}
+    {% assign data = group.items %}
+    {% if include.component == "membros" %}
+    <div class="tipoecards section" data-title="{{ group.name }}">
+    {% elsif include.component != "membros" %}
+    <div class="tipoecards">
+    {% endif %}      
+      {% if include.component == "noticias" or include.component == "publicacoes" %}
+        <h3 class="ano titulosecao">{{ group.name }}</h3> 
+      {% elsif include.component == "projetos" %}
+        <h3 class="group titulosecao">{{ group.name }}</h3> 
+      {% elsif include.component == "membros" %}
+        <h3 class="role titulosecao">{{ group.name }}</h3> 
+      {% endif %}
+
+      {% if include.component == "noticias" %}
+        <div class="cardsnoticias">
+      {% elsif include.component == "projetos" %}
+        <div class="cardsprojetos">
+      {% elsif include.component == "membros" %}
+        <div class="cardsmembros">
+      {% elsif include.component == "publicacoes" %}
+        <div class="cardspublicacoes">
+      {% endif %}
+
+      {% for d in data %}
+        {% assign style = d.style | default: include.style %}
+        
+        {%
+          include {{ include.component | append: ".html" }}
+          affiliation=d.affiliation
+          author=d.author
+          authors=d.authors
+          buttons=d.buttons
+          date=d.date
+          description=d.description
+          excerpt=d.excerpt
+          icon=d.icon
+          image=d.image
+          link=d.link
+          linklattes= d.linklattes
+          linkorcid = d.linkorcid
+          linklinkedin = d.linklinkedin
+          linkemail = d.linkemail
+          linkgithub = d.linkgithub
+          name=d.name
+          publisher=d.publisher
+          repo=d.repo
+          role=d.role
+          style=style
+          subtitle=d.subtitle
+          tags=d.tags
+          text=d.text
+          title=d.title
+          url=d.url
+          id=d.id
+        %}
+      {% endfor %}
+
+      </div> 
+    </div> 
+  {% endfor %}
+
+</section> 

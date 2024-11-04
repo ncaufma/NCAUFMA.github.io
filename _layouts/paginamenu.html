@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-dark="false">
+  {% include head.html %}
+  <body class="body-default">
+    {% include header.html %}
+    <main class="main-paginacommenu">
+      {% include headerpagina.html
+        background_image=page.background_image
+        show_search= page.show_search
+        show_post_info= page.show_post_info
+        image=page.image %}
+      <section class="conteudo">
+        <div class="section-menu">
+          <div class="menu" id="{% if page.title == 'Membros' %}menumembros{% elsif page.title == 'Sobre Nós' %}menusobrenos{% endif %}">
+          </div>
+        </div>
+        <div class="conteudo-paginamenu">
+          {{ content }}
+        </div>
+      </section>
+    </main>
+    {% include footer.html %}
+  </body>
+  {% include scripts.html %}
+</html>

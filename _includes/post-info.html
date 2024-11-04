@@ -1,0 +1,32 @@
+{% assign postinfo = include %}
+
+<div class="post-info">
+  {% assign published = postinfo.published | date: "%B %d, %Y" %}
+ 
+  {% if postinfo.title %}
+    <h1 class="tituloNoticia">
+      {{ postinfo.title }}
+    </h1>
+  {% endif %}
+  {% if published%}
+    
+      <span >
+        {% include icon.html icon="fa-regular fa-calendar" %}
+        <span>{{ published }}</span>
+      </span>
+    
+  {% endif %}
+  
+  {% if postinfo.imagem %}
+    <img class="ImagemDaNoticia"
+      src="{{ postinfo.imagem | relative_url }}"
+      alt="{{ postinfo.title | default: "excerpt image" }}"
+    >
+  {% endif %}
+
+  {% if postinfo.tags %}
+  {% include tags.html tags=postinfo.tags %}
+  {% endif %}
+
+</div>
+

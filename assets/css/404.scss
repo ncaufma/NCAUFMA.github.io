@@ -1,0 +1,50 @@
+---
+---
+
+.error0{color: black; 
+    font-size: 65px;
+    margin-bottom: 20px;
+    
+}
+
+.error0:hover{
+    color: #1f4570;
+
+}
+
+.error1{color: black; 
+    font-size: 130px;
+}
+
+.error1:hover{
+    color: var(--vermelhoprimary);
+
+}
+.error2{color: black; 
+    font-size: 130px;
+}
+.error2:hover{
+    color: var(--amarelosecondary);
+}
+.error3{color: black; 
+    font-size: 130px;
+}.error3:hover{
+    color: var(--roxoprimary);
+}
+
+.div-erro{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.cols {
+display: grid;
+--repeat: min(3, var(--cols));
+grid-template-columns: repeat(var(--repeat), 1fr);
+align-items: flex-start;
+gap: 40px;
+margin: 0;
+}

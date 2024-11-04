@@ -1,0 +1,128 @@
+---
+---
+
+$thumb-size: 180px;
+$wrap: 800px;
+
+.cardspublicacoes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 0;
+}
+
+.cardpublicacao {
+  margin: 0;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.cardpublicacao:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: -2px;
+  left: 0;
+  height: 5px;
+  background-color: var(--vermelhoprimary); /* Cor do hover e ativo para home */
+  transition: all 0.3s ease;
+}
+.cardpublicacao-link{
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  border-radius: 20px;
+  color: var(--text);
+  transition: transform 0.3s ease;
+  padding: 30px;
+  align-items: center;
+
+}
+
+
+.cardpublicacao-imagem {
+  position: relative;
+  width: $thumb-size;
+  flex-shrink: 0;
+}
+
+.cardpublicacao-imagem img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardpublicacao-texto {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+  height: min-content;
+  text-align: left;
+  overflow-wrap: break-word;
+  z-index: 0;
+}
+
+.cardpublicacao-titulo,
+.cardpublicacao-autores,
+.cardpublicacao-detalhes,
+.cardpublicacao-descricao {
+  width: 100%;
+}
+
+.cardpublicacao-titulo {
+  font-weight: var(--semi-bold);
+}
+
+.cardpublicacao-texto > .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: var(--light-gray);
+  opacity: 0.5;
+  font-size: 30px;
+  z-index: -1;
+}
+
+.cardpublicacao-publicadoem {
+  text-transform: capitalize;
+}
+
+.cardpublicacao-descricao {
+  color: var(--gray);
+}
+
+.cardpublicacao-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cardpublicacao-buttons .button {
+  margin: 0;
+}
+
+.cardpublicacao-texto > .tags {
+  display: inline-flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+@container (max-width: #{$wrap}) {
+  .cardpublicacao {
+    flex-direction: column;
+  }
+
+  .cardpublicacao-imagem {
+    width: unset;
+    height: $thumb-size;
+  }
+}

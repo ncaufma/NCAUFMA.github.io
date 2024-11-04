@@ -1,0 +1,26 @@
+<!-- third party scripts -->
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+<script src="https://unpkg.com/mark.js@8" defer></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+<!-- Firebase App (sempre necessário) -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js" type="module"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bcrypt.js/2.4.3/bcrypt.min.js"></script>
+
+
+
+
+
+<!-- include all js in scripts folder -->
+{% assign scripts = site.static_files | where_exp: "file", "file.path contains '/assets/js/'" %}
+{% for script in scripts %}
+  {% if script.path == '/assets/js/firebase.js' or script.path == '/assets/js/firebase-config-template.js' %}
+    <script src="/{{ script.path | relative_url | remove_first: '/' }}" type="module"></script>
+  {% else %}
+    <script src="/{{ script.path | relative_url | remove_first: '/' }}"></script>
+  {% endif %}
+{% endfor %}

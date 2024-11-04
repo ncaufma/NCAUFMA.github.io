@@ -1,0 +1,33 @@
+{% assign projetos = include %}
+
+      <div class="cardProjeto">
+        <a
+          href="{{ include.url | relative_url }}"
+          class="cardProjeto-link"
+        >
+          <img
+            src="{{ projetos.image | relative_url }}"
+            class="cardProjeto-imagem"
+            alt="{{ projetos.title | default: 'card image' }}"
+          >
+          <div class="cardProjeto-texto">
+            <h1 class="cardProjeto-titulo">{{ projetos.title }}</h1>
+            
+            {% if projetos.subtitle %}
+              <span class="cardProjeto-subtitulo">{{ projetos.subtitle }}</span>
+            {% endif %}
+
+            {% if projetos.description %}
+              <p class="cardProjeto-descricao">
+                {{ projetos.description | markdownify | strip_html }}
+              </p>
+            {% endif %}
+
+            {% if projetos.tags or projetos.repo %}
+              {% include tags.html tags=projetos.tags %}
+            {% endif %}
+          </div>
+        </a>
+      </div>
+  
+  

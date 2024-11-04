@@ -1,0 +1,21 @@
+---
+---
+
+.body-default {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 119px 0 0 0; 
+  color: var(--text);
+  font-family: var(--body);
+  text-align: justify;
+  height: 100vh;
+}
+
+.body-manager{
+  display: flex;   
+  background-color: var(--black);
+  margin: 0;              
+  height: 100vh; 
+  visibility: hidden;
+}

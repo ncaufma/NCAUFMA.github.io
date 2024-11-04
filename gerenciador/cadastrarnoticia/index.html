@@ -1,0 +1,35 @@
+---
+layout: manager
+title: Cadastrar Notícia
+---
+
+<h1 class="titulo">Formulário de Notícias</h1>
+
+<form onsubmit="return false" method="POST" id="form_noticia" enctype="multipart/form-data">
+    <div id="form_fields">
+
+            <label for="titulo" class="labelfield">Título</label>
+            <input type="text" id="tituloNoticia" name="tituloNoticia" required minlength="10" maxlength="100" placeholder="Insira o seu título aqui" />
+            
+            <label for="imagem" class="labelfield">Imagem</label>
+            <input type="file" accept="image/*" name="imagemNoticia" class="inputImage" id="ImagemPost"/>
+
+            <label for="tags" class="labelName">Tags</label>
+            <input type="text" id="addChip" placeholder="Ex: Machine Learning, PLN">
+            <div class="chip-container"></div>
+            
+            <label for="descricao" class="labelfield">Descrição</label>
+            <textarea name="descricaoNoticia" id="descricaoNoticia" required minlength="20" maxlength="500" placeholder="Insira uma breve descrição ou biografia aqui"></textarea>
+        
+        <div class="button_row">
+            <a href="../" class="cancelButton" >Cancelar</a>
+            <!--<button type="button" class = "cancelButton">Cancelar</button>-->
+            <button type="submit" class = "submit">Enviar</button>
+        </div>
+    </div>
+
+</form>
+
+<script src="../../assets/js/formNoticias.js"></script>
+
+

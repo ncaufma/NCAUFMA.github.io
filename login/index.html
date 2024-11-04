@@ -1,0 +1,50 @@
+---
+title: login
+layout: default
+---
+
+<div class="cardLogin">
+  <div class="cardLogin-image">
+    <img src="../assets/images/logo.svg" alt="logo">
+  </div>
+
+  <div class="cardLogin-body">
+    <h4 class="cardLogin-title">Login</h4>
+    <form  id="loginForm"  method="POST" class="my-login-validation needs-validation" novalidate>
+      <div class="cardLogin-form">
+        <label for="email">E-Mail Address</label>
+        <input id="emailInput" type="email" class="form-control" name="email" value="" required autofocus>
+        <div class="invalid-feedback">
+          Email is invalid
+        </div>
+      </div>
+
+      <div class="cardLogin-form">
+        <label for="password">Password
+          <a href="../forgot/" class="float-right">
+            Forgot Password?
+          </a>
+        </label>
+        <input id="senhaInput" type="password" class="form-senha" name="password" required data-eye>
+        <div class="invalid-feedback">
+          Password is required
+        </div>
+      </div>
+
+      <div class="cardLogin-form">
+        <div class="custom-checkbox custom-control">
+          <input type="checkbox" name="remember" id="remember" class="custom-control-input">
+          <label for="remember" class="custom-control-label">Remember Me</label>
+        </div>
+      </div>
+
+      <div class="cardLogin-form m-0">
+        <button id="emailLoginBtn" type="submit" class="btn-login">
+          Login
+        </button>
+      </div>
+    </form>
+
+  </div>
+  <button id="loginBtn">Login with Google</button>
+</div>

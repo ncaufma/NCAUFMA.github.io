@@ -1,0 +1,181 @@
+---
+title: Home
+nav:
+  order: 1
+---
+
+
+<section class="sectionConhecaMais">
+  <div class="conhecaMais">
+    <div class="text-block">
+      <h1>Núcleo de Computação Aplicada</h1>
+      <p>
+        O Nucleo de Computação Aplicada NCA-UFMA da Universidade Federal do Maranhão - Brasil, estabelecido em 2008, realiza pesquisas em Ciência da Computação, com foco em possíveis aplicações na indústria ou na sociedade.      </p>
+      <a href="sobreNos/" class="btn-primary">Conheça Mais</a>
+    </div>
+    <div class="image-block">
+      <img src="assets/images/imagemHome.svg" alt="Imagem Descritiva">
+    </div>
+  </div>
+</section>
+
+<!-- Carrossel -->
+<section class="noticias">
+  <h2 class="titulosecaohome">Últimas Notícias</h2>
+  
+  <div class="swiper-container carouselNoticias">
+    <div class="swiper-wrapper">
+      {% assign noticias = site.posts | sort: "date" | reverse %}
+      {% assign latest_noticias = noticias | slice: 0, 3 %}
+      
+      {% for post in latest_noticias %}
+        <div class="swiper-slide carousel-item">
+          
+            {% if post.image %}
+              <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="carousel-imagem">
+            {% endif %}
+          
+          <div class="carousel-content">
+            <h3>{{ post.title }}</h3>
+            
+            {% assign excerpt = post.content
+              | default: ""
+              | regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->", true
+              | default: post.excerpt
+              | default: ""
+              | strip_html
+            %}
+            <p>{{ excerpt | truncatewords: 20, "..." }}</p>
+
+            <a href="{{ post.url | relative_url }}" class="btn-secondary">Saiba Mais</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+<section class="laboratorios">
+  <h2 class="titulosecaohome">Laboratórios</h2>
+  
+  <div class="cardslaboratorios">
+    {% assign laboratorios = site.laboratorios %}
+    
+    
+    {% for lab in laboratorios %}
+      <div class="cardlaboratorio">
+        <a href="{{ lab.url | relative_url }}" class="laboratorio-link">
+          <div class="laboratorioimagem">
+            <img src="{{ lab.image | relative_url }}" alt="{{ lab.name }}">
+          </div>
+          <h3>{{ lab.title }}</h3>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Seção de projetos -->
+
+{% assign emptyarray = "" | split: "," %}
+{% assign projects = site.projects %}
+
+<!-- Verificar se projects não está vazio -->
+{% if projects.size > 0 %}
+  {% assign projects = projects | sort: "date" | reverse | slice: 0, 3 %}
+  
+  <section class="ultimosprojetos">
+    <h2 class="titulosecaohome">Últimos Projetos</h2>
+    <div class="cardsUltimosProjetos">
+      {% for project in projects %}
+        <div class="cardUltimosProjetos">
+          <a href="{{ project.url | relative_url }}" class="cardProjeto-link">
+
+            {% if project.image %}
+              <img
+                src="{{ project.image | relative_url }}"
+                class="cardProjeto-imagem"
+                alt="{{ project.title | default: 'Imagem do projeto' }}"
+              >
+            {% endif %}
+
+            <div class="cardProjeto-texto">
+              <h1 class="cardProjeto-titulo">{{ project.title }}</h1>
+
+              {% if project.subtitle %}
+                <span class="cardProjeto-subtitulo">{{ project.subtitle }}</span>
+              {% endif %}
+
+              {% if project.description %}
+                <p class="cardProjeto-descricao">
+                  {{ project.description | markdownify | strip_html }}
+                </p>
+              {% endif %}
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+{% else %}
+  <p>Nenhum projeto encontrado.</p>
+{% endif %}
+
+
+
+<section class="parcerias">
+  <h2 class="titulosecaohome">Parcerias</h2>
+  <div class="logosparcerias">
+    <a href = "https://www.pdfmaranhao.com.br/alumar" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logoalcoa.svg" alt="Logo 1">
+    </a>
+    <a href ="https://www.chesf.com.br/Pages/default.aspx" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logochesf.svg" alt="Logo 11">
+    </a>
+    <a href ="https://www.eletronorte.com.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logoeletronorte.svg" alt="Logo 13">
+    </a>
+    <a href ="https://eneva.com.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logoeneva.svg" alt="Logo 10">
+    </a>
+    <a href ="https://www.equatorialenergia.com.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logoequatorial.svg" alt="Logo 9">
+    </a>
+    <a href ="https://imesc.ma.gov.br/portal/Home" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logoimesc.svg" alt="Logo 7">
+    </a>
+    <a href ="https://www.seplan.ma.gov.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logoseplan.svg" alt="Logo 4">
+    </a>
+    <a href ="https://www.ic.uff.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logouff.svg" alt="Logo 15">
+    </a>
+    <a href ="https://www.mpma.mp.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logomp.svg" alt="Logo 6">
+    </a>
+    <a href ="https://petrobras.com.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logopetrobras.svg" alt="Logo 5">
+    </a>
+    <a href = "https://www.tecgraf.puc-rio.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logotecgraf.svg" alt="Logo 3">
+    </a>
+    <a href ="https://www.tcema.tc.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logotce.svg" alt="Logo 17">
+    </a>
+    <a href ="https://www.utad.pt/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logoutad.svg" alt="Logo 10">
+    </a>
+    <a href ="https://www.up.pt/portal/pt/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logouporto.svg" alt="Logo 18">
+    </a>
+    <a href = "https://portal.ufcg.edu.br/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logoufcg.svg" alt="Logo 2">
+    </a>
+    <a href ="https://www.ucdavis.edu/" class="linklogoparceria">
+      <img class="logoparceria" src="assets/images/parceiras/logoucdavis.svg" alt="Logo 14">
+    </a>
+  </div>
+</section>

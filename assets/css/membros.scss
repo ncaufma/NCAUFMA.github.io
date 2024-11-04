@@ -1,0 +1,246 @@
+---
+---
+
+.role{
+  margin-bottom: 30px;
+}
+
+.cardsmembros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+}
+
+.cardmembro {
+  max-width: calc(25% - 20px);
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 180px;
+  transition: transform 0.3s;
+}
+
+.cardmembro h3 {
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+}
+
+.cardmembro p {
+  text-align: justify;
+  overflow-y: scroll;
+}
+.cardmembro-front{
+  min-height: 315px;
+  max-height: 350px;
+}
+.cardmembro-front,
+.cardmembro-back {
+  width: 100%;
+  flex: 1;
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.cardmembroimage{
+  border-radius: 100%;
+  max-width: 10rem;
+  text-align: center;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cardmembro-title {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cardmembro-text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.linksmembros {
+  display: flex;    
+  flex-direction: row;
+  gap: 5px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.linksmembros > .icony:nth-child(3) {
+padding: 8px;
+}
+
+.icony {
+background-color: white;
+border-radius: 50%; 
+padding: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.icone {
+  width: 20px; 
+  height: 20px; 
+  object-fit: contain; 
+  justify-content: center;
+}
+
+
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 10;
+  border-radius: 8px;
+}
+
+.popup::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.cardmembro:hover .popup {
+  display: block;
+}
+
+
+
+
+.cardmembro-front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.cardmembro-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  z-index: 1;
+}
+
+.cardmembro-back > p{
+  margin: 0;
+  padding: 0;
+}
+
+.cardmembro.flipped .cardmembro-front {
+  transform: rotateY(-180deg);
+}
+
+.cardmembro.flipped .cardmembro-back {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.cardmembro-title {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn-saiba-mais, .btn-saiba-menos {
+  padding: 8px 16px;
+  border: none;
+  background-color: var(--amareloprimary);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-saiba-mais:hover, .btn-saiba-menos:hover {
+  background-color: var(--amarelosecondary);
+}
+
+
+
+.btn-saiba-mais, .btn-saiba-menos {
+  background-color: var(--amareloprimary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-saiba-mais:hover, .btn-saiba-menos:hover {
+  background-color: var(--amareloprimary);
+}
+
+.linksmembros a img {
+  transition: transform 0.3s ease, filter 0.3s ease; 
+}
+
+.linksmembros a:hover img {
+  transform: scale(1.1); 
+  filter: brightness(1.3); 
+}
+@media (max-width: 1700px) {
+  .cardmembro {
+    max-width: calc(33.33% - 20px);
+  }
+  .cardmembro-front{
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardmembro {
+    max-width: calc(50% - 20px);
+  }
+  .cardmembro-front{
+    min-height: 315px;
+    max-height: 390px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .cardmembro {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,28 @@
+<link 
+  href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css"
+  rel="stylesheet"
+>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js" type="module"></script>
+
+<!-- Incluindo todos os CSS da pasta de estilos -->
+<!-- Incluindo todos os CSS da pasta de estilos -->
+<!-- Incluindo todos os CSS da pasta de estilos -->
+{% assign styles = site.pages
+  | where_exp: "file", "file.url contains 'assets/css/'"
+%}
+{% for style in styles %}
+  {% unless style.url contains ".map" %}
+    <link
+      href="/{{ style.path | replace: '.scss', '.css' | relative_url | remove_first: '/' }}"
+      rel="stylesheet"
+    />
+  {% endunless %}
+{% endfor %}
+
+

@@ -1,0 +1,15 @@
+<div class="search-box">
+  <input
+    type="text"
+    class="search-input"
+    oninput="onSearchInput(this)"
+    placeholder="Pesquisar itens nesta página"
+  />
+  <button
+    disabled
+    aria-label="clear search"
+    onclick="onSearchClear()"
+  >
+    {% include icon.html icon="fa-solid fa-magnifying-glass" %}
+  </button>
+</div>

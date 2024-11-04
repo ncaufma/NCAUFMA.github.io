@@ -1,0 +1,39 @@
+---
+layout: manager
+title: Usuários
+---
+
+<div class="informacoesdapaginaadmin">
+  <h1 class="titulopaginaadmin">Usuários</h1>
+  <div class="barraebutton">
+    <div class="search-bar">
+      {% include search-box.html %}
+      {% include search-info.html %}
+    </div>
+    <button class="add-button" onclick="window.location.href='/gerenciador/cadastrarusuario'">+ ADICIONAR USUÁRIO</button>
+  </div>
+  <div class="controllertable">
+    <table id="sortableTable">
+      <thead class="dadopesquisado">
+        <tr>
+            <th>#</th>
+            <th>
+                Email
+                <button class="ordenar" onclick="sortTable(1, this)">
+                    <i class="fa-solid fa-arrow-down-a-z"></i>
+                </button>
+            </th>
+            <th>
+                Perfil
+                <button class="ordenar" onclick="sortTable(2, this)">
+                    <i class="fa-solid fa-arrow-down-a-z"></i>
+                </button>
+            </th>
+            <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody-users">     
+      </tbody>
+  </table>
+</div>
+</div>

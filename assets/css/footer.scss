@@ -1,0 +1,137 @@
+---
+---
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 0% 10px 20px;
+  font-family: var(--font);
+  padding: 50px 0 15px 0;
+}
+
+footer a {
+  color: var(--text) !important;
+}
+
+footer a:hover {
+  color: var(--primary) !important;
+}
+
+footer .icon {
+  font-size: var(--xl);
+}
+
+.informacoesecreditos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0px 5% 0px 5%;
+  gap: 30px;  
+  align-items: center;
+  width: 100%;
+}
+.logofooter{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  gap:20px;
+  min-width: calc((100% / 3) - 30px);
+}
+
+.contatofooter{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  min-width: calc((100% / 3) - 30px);
+  gap: 30px;
+}
+
+.linkscontato{
+  display: flex; 
+  flex-direction: column;
+  gap: 30px;
+}
+.iconenome {
+  display: flex;
+  align-items: center;
+}
+.iconenome > a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  gap: 20px;
+  align-items: center;
+}
+
+.iconenome a i{
+  font-size: 24px;
+}
+.iconenome p {
+  text-align: justify;
+  display: flex;
+  margin: 0;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.linhafooter {
+  border: none;
+  border-top: 2px solid #000000;   
+  width: 90%;                   
+  margin: 0px auto;                  
+}
+
+.ImagemMaps{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  height: 250px;
+  min-width: 33.3%;
+}
+
+.TituloContato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.TituloContato p {
+  font-size: 24px; 
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: bold; 
+  margin: 0; 
+}
+
+.Maps{
+  display: flex; 
+  justify-content: center; 
+  min-width: calc((100% / 3) - 30px);
+  width: 100%;
+  height: auto;
+}
+
+
+/* Estilos para celulares (largura máxima de 480px) */
+@media (max-width: 600px) {
+  .informacoesecreditos{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .logofooter{
+    flex-direction: row;
+  }
+  .iconenome{
+    gap:10px;
+  }
+  .contatofooter{
+    gap:10px;
+  }
+  .linkscontato{
+    gap: 10px;
+  }
+  .Maps{
+    display: none;
+  }
+ 
+}

@@ -1,0 +1,60 @@
+  {% assign post = include %}
+
+  <div class="cardnoticia">
+    
+      {% assign url = post.url %}
+      {% assign title = post.title %}
+      {% assign image = post.image %}
+
+      <a
+      href="{{ url | relative_url }}"
+      class="cardnoticia-link "
+
+      >
+
+        {% if image %}
+            <img
+              src="{{ image | relative_url }}"
+              alt="{{ title | default: "excerpt image" }}"
+              class="cardnoticia-imagem "
+            >
+        {% endif %}
+
+        <div class="cardnoticiatext">
+          <a
+            href="{{ url | relative_url }}"
+            class="cardnoticia-link "
+          >
+            <h1 class="cardnoticia-titulo">
+              {{ post.title }}
+            </h1>
+          </a>
+
+          {% assign excerpt = post.content
+            | default: ""
+            | regex_scan: "<!-- excerpt start -->(.*)<!-- excerpt end -->", true
+            | default: post.excerpt
+            | default: ""
+            | strip_html
+          %}
+          {% assign search = post.content
+            | strip_html 
+            | strip_newlines
+            | regex_strip
+          %}
+          <a
+          href="{{ url | relative_url }}"
+          class="cardnoticia-link "
+        >
+          <p id= "postTitle" data-search="{{ search }}" class="cardnoticia-descricao">
+            {{ excerpt }}
+          </p>
+        </a>
+      {%
+        include post-info.html
+        tags=post.tags
+      %}
+        </div>
+      </a>
+  </div> 
+

@@ -1,0 +1,235 @@
+---
+---
+
+.InformacoesPrincipais{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.texto-sobrenos{
+  width: 70%;
+}
+.sobrenosimagem{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  justify-content: center;
+  display: flex;
+}
+
+.sobrenosimagem img{
+  max-width: 100%;
+  max-height: 30rem;
+}
+
+
+.InformacoesValores >*{
+  margin: 0;
+}
+.valores li p{
+  margin: 0;
+  text-align: justify;
+}
+.valores > h2{
+  margin-bottom: 30px;
+}
+.valores >*{
+  margin: 0;
+}
+ .valoreslista {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;  
+  padding: 0;             
+  margin: 0;      
+  margin-top: 30px;
+  gap: 20px;     
+}
+ .valoreslista li {
+  display: flex;            
+  gap: 20px;
+  
+}
+
+.valoreslista li i {
+  align-items: flex-start;
+  font-size: 1.2em;       
+  color: #5a5a5a;      
+  margin: 0;  
+  margin-top: 5px;
+  width: 24px;   
+}
+
+
+
+.linhasdepesquisa{
+  display: flex;
+  flex-direction: column;
+}
+.linhasdepesquisa >*{
+  margin: 0;
+}
+
+.linhasdepesquisa > h1{
+  margin-bottom: 30px;
+}
+.linhasdepesquisa > p{
+  margin-bottom: 30px;
+  margin-top: 30px;
+  text-align: justify;
+  font-size: 18px;
+  line-height: 1.6; /* Espaçamento de linha para melhorar a legibilidade */
+
+}
+
+.centralizador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.tabela-dinamica {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.menu-opcoes {
+  display: flex;
+  width: 100%;
+}
+
+.menu-item {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  border-right: 1px solid #ccc;
+  background-color: white;
+  font-size: 1rem;
+}
+.menu-item:last-child{
+border-right: none;
+}
+.menu-item.item1.active {
+  background-color: #7F5A90; 
+  color: white;
+}
+.menu-item.item1:hover {
+  background-color: #7F5A90; 
+  color: white;
+  transition: background-color 1.5s ease;
+}
+
+.menu-item.item2.active {
+  background-color: #C93740;
+  color: white; 
+}
+.menu-item.item2:hover {
+  background-color: #C93740;
+  color: white; 
+  transition: background-color 1.5s ease;
+}
+.menu-item.item3.active {
+  background-color: rgb(228, 156, 65);
+  color: white; 
+}
+.menu-item.item3:hover {
+  background-color: rgb(228, 156, 65);
+  color: white;
+  transition: background-color 1.5s ease;
+}
+.menu-item.item4.active {
+  background-color: #1f4570; 
+  color: white; 
+}
+.menu-item.item4:hover {
+  background-color: #1f4570; 
+  color: white;
+  transition: background-color 1.5s ease;
+}
+.menu-item.item5.active {
+  background-color: rgb(120, 123, 157); 
+  color: white; 
+}
+.menu-item.item5:hover {
+  background-color: rgb(120, 123, 157); 
+  color: white; 
+  transition: background-color 1.5s ease;
+}
+
+
+.conteudolinhasdepesquisa {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background-color: #ffffff;
+  transition: opacity 2s ease;
+}
+
+.conteudolinhasdepesquisa.active {
+  max-height: 20em; /* Define a altura máxima quando o conteúdo estiver visível */
+  opacity: 1; /* Torna o conteúdo visível */
+  padding: 15px;
+}
+.texto-centralizado {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0; /* Centraliza o contêiner horizontalmente */
+  text-align: justify; /* Alinha o texto à esquerda */
+  font-size: 18px; /* Tamanho de fonte confortável para leitura */
+  line-height: 1.6; /* Espaçamento de linha para melhorar a legibilidade */
+  margin-top: 30px;
+}
+.texto-centralizado > *{
+    margin: 0;
+}
+
+.InfomacoesHistoria{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.InfomacoesHistoria >p{
+  margin: 30px 0;
+}
+
+.InfomacoesHistoria >*{
+  margin: 0;
+  text-align: justify;
+}
+.historialista{
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+  gap:20px;
+}
+.historialista li{
+  gap: 10px;
+}
+.historialista li > *{
+  margin: 0;
+}
+
+@media (max-width: 820px) {
+  .tabela-dinamica{
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-opcoes{
+    flex-direction: column;
+    min-width: 40%;
+
+  }
+  .conteudolinhasdepesquisa{
+    min-width: 60%;
+  }
+  .conteudolinhasdepesquisa.active{
+    max-height:80rem ;
+  }
+}

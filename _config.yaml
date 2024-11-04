@@ -1,0 +1,75 @@
+
+### jekyll settings
+baseurl: ""
+# Substitua pelo seu nome de repositório
+
+
+# front matter defaults
+defaults:
+  # all markdown files
+  - scope:
+      path: ""
+    values:
+      layout: default
+  # markdown files in /_members
+  - scope:
+      type: "projects"
+    values:
+      layout: projeto
+  # markdown files in /_posts
+  - scope:
+      type: "posts"
+    values:
+      layout: noticia
+  - scope:
+      type: "laboratorios"
+    values:
+      layout: laboratorio
+
+
+collections:
+  # generate page for each member
+  members:
+    output: true
+  # generate page for each post
+  posts:
+    output: true
+    permalink: /:title/
+  laboratorios:
+    output: true
+    permalink: /:title/
+  projects:
+    output: true
+    permalink: /:title/
+
+# jekyll plugins
+plugins:
+  - jekyll-spaceship
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+# code block syntax highlighting
+highlighter: rouge
+
+
+
+# jekyll theme
+theme: null
+
+sass:
+  sass_dir: /assets/css
+  style: compressed
+
+
+# force jekyll to include certain files/folders
+include:
+  - /ssets/css
+  - /assets/js
+
+# force jekyll to exclude certain files/folders
+exclude:
+  - README.md
+  - LICENSE.md
+  - CITATION.cff
