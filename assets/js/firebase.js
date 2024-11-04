@@ -18,7 +18,7 @@ let db;
 
 async function fetchFirebaseConfig() {
   try {
-    const response = await fetch("https://nca-api.vercel.app/api/getSecretKeys");
+    const response = await fetch("https://api-nca-production.up.railway.app/api/getSecretKeys");
     const firebaseConfig = await response.json();
     const app = initializeApp(firebaseConfig);
 
@@ -151,7 +151,7 @@ async function verificarPrimeiroLogin(user) {
 
 async function verificarSenha(password, hashedPassword) {
   try {
-    const response = await fetch("https://nca-api.vercel.app/api/verifyPassword", {
+    const response = await fetch("https://api-nca-production.up.railway.app/api/verifyPassword", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ password, hashedPassword })
@@ -510,7 +510,7 @@ async function saveUser(userId) {
 // Função auxiliar para realizar o hashing da senha via back-end
 async function hashPassword(password) {
   try {
-    const response = await fetch("https://nca-api.vercel.app/api/hashPassword", {
+    const response = await fetch("https://api-nca-production.up.railway.app/api/hashPassword", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ password })
